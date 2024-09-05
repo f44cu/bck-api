@@ -22,7 +22,7 @@ server.listen(8080, () => {
 });
 
 const MONGO_URL = "mongodb+srv://facundoxavier2:ahtUjMpuLZJYCcay@cluster0.nfjsu.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-
+ 
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on('error', (error: Error) => console.log("Error"));
